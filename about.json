@@ -2,6 +2,7 @@
   "about_url": null,
   "license_url": null,
   "assets": {
+    "bg-main": "images/main-bg.jpg"
   },
   "modifiers": {
     "serialize_topic_excerpts": true

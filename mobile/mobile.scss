@@ -2,20 +2,89 @@
   h1 {
     font-size: 2.5em !important;
   }
+
   p {
     font-weight: normal;
     font-size: $font-up-1;
   }
 }
 
-html
-  body:not(.static-tos):not(.static-faq):not(.static-privacy):not(.about-page):not(.static-faq):not(.badges-page):not(.tags-page):not(.archetype-regular):not(.archetype-private_message):not(.admin-interface):not(.edit-category):not(.user-summary-page):not(.user-activity-page):not(.user-invites-page):not(.user-preferences-page)
-  #main-outlet {
-  width: calc(100% - 1em);
-  padding: 0em 0.5em 1em 0.5em;
-  box-shadow: none;
-  background-color: transparent;
+.search-banner {
+  display: none;
 }
+
+.topic-list .main-link a.title {
+  color: var(--primary) !important;
+  padding: 0.5em 0 1.2em 0;
+  font-size: var(--font-down-1)
+}
+
+.custom-category-boxes:not(.above-discovery-categories-outlet) .category-box .category-box-inner {
+  padding: .5em .5em;
+}
+
+.category-details {
+  margin-left: 1em;
+}
+
+.category-heading p {
+  font-size: var(--font-up-2);
+  margin-bottom: 0.75em;
+  text-align: right;
+}
+
+#list-area {
+  margin-bottom: 1em;
+}
+
+.main-content.mobile {
+  margin-bottom: 0 !important;
+}
+
+.category-heading {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.category-logo {
+  width: 3em !important;
+  height: 3em !important;
+}
+
+.background-container {
+  background-size: cover !important;
+  //background-position: 0 0 !important;
+}
+
+//body:not(.static-tos):not(.static-faq):not(.static-privacy):not(.about-page):not(.static-faq):not(.badges-page):not(.tags-page):not(.archetype-regular):not(.archetype-private_message):not(.admin-interface):not(.edit-category):not(.user-summary-page):not(.user-activity-page):not(.user-invites-page):not(.user-preferences-page)
+
+.topic-list-item {
+  margin-bottom: 1.7em !important
+}
+
+#create-topic {
+  //background: #8dd247 !important
+}
+
+#main-outlet {
+  //width: calc(100% - 1em);
+  background: var(--secondary) !important;
+  width: 90% !important;
+  border-radius: 0 !important;
+  box-shadow: none;
+  padding: 5% 5% 0 5% !important;
+}
+
+.list-container {
+  margin-top: 5%;
+}
+
+//.topic-list-data .avatar {
+//  position: absolute;
+//  left: 0px;
+//  top: 0px;
+//}
 
 html body.static-tos #main-outlet,
 html body.static-privacy #main-outlet,
@@ -66,12 +135,14 @@ ol.category-breadcrumb {
     border-radius: 8px;
     border: none;
     background-color: var(--secondary);
+
     a:hover,
     a:focus {
       color: var(--primary);
       background-color: var(--secondary);
     }
   }
+
   .drop {
     top: calc(100% + 0.5em);
     border-radius: 8px;
@@ -109,4 +180,8 @@ ol.category-breadcrumb {
   padding: 2em 1em;
   border-radius: 0.25em;
   margin-top: 1em;
+}
+
+.topic-list-bottom {
+  margin-top: 5em;
 }
