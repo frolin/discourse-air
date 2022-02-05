@@ -32,7 +32,7 @@
       {{~raw "topic-post-badges" unreadPosts=topic.unread_posts unseen=topic.unseen url=topic.lastUnreadUrl newDotText=newDotText}}
     {{~/if}}
 
-    <div class="link-bottom-line">
+  <div class="link-bottom-line">
     {{#unless hideCategory}}
       {{#unless topic.isPinnedUncategorized}}
         {{~raw-plugin-outlet name="topic-list-before-category"}}
@@ -50,9 +50,15 @@
   {{/if}}
 </td>
 
-{{#if showPosters}}
-  {{raw "list/posters-column" posters=topic.featuredUsers}}
-{{/if}}
+<td class="topic-category-logo">
+<div class="topic-category-logo-image">
+  <img style="width:100%;"src="{{topic.category.uploaded_logo.url}}">
+</div>
+</td>
+
+<!--{{#if showPosters}}-->
+<!--  {{raw "list/posters-column" posters=topic.featuredUsers}}-->
+<!--{{/if}}-->
 
 {{raw "list/posts-count-column" topic=topic}}
 

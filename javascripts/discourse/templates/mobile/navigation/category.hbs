@@ -29,9 +29,11 @@
     hasDraft=currentUser.has_topic_draft
     editCategory=(route-action "editCategory" category)
   }}
+{{/d-section}}
 
+  <div class="btn-group">
   {{plugin-outlet
     name="category-navigation" connectorTagName="div"
     args=(hash category=category)
   }}
-{{/d-section}}
+</div>
